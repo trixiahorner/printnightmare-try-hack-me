@@ -6,12 +6,14 @@ This is a post compromise attack that takes advantage of the printer spooler. Th
 <br>
 
 
-### CVE-2021-1675 Walkthrough
-<br>
+### Environment
 
 - attacker machine: 10.10.217.212
 - target machine: 10.10.103.215
-  
+<br>
+<br>
+
+### CVE-2021-1675 Walkthrough
 <br> 
 <br>
 1. Before running the exploit, create a PrintNightmare director (pn) and a share directory.
