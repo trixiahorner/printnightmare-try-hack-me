@@ -24,7 +24,7 @@ git clone https://github.com/tryhackme/CVE-2021-1675
 
 <br>
 <br> 
-2. Be sure to check if environment is vulnerable
+2. I check if environment is vulnerable
 
 ```
 rpcdump.py @10.10.103.216 | egrep 'MS-RPRN|MS-PAR'
